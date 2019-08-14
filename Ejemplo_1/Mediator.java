@@ -5,7 +5,7 @@ class Mediator {
     private int number;
 
     public synchronized void storeMessage(int num) {
-        // No hay especio para otro mensajes
+        // No hay especio para otro mensaje
         while (slotFull == true) {
             try {
                 wait();
@@ -20,7 +20,7 @@ class Mediator {
     }
 
     public synchronized int retrieveMessage() {
-        // No hay mensaje para recuperar
+        // No hay mensajes para recuperar
         while (slotFull == false) {
             try {
                 wait();
