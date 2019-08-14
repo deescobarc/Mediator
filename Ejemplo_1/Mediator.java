@@ -5,7 +5,7 @@ class Mediator {
     private int number;
 
     public synchronized void storeMessage(int num) {
-        // No hay especio para otro mensaje
+        // No hay espacio para otro mensaje
         while (slotFull == true) {
             try {
                 wait();
