@@ -95,7 +95,7 @@ class BookTitleColleague extends BookColleague {
   writeln('BEGIN TESTING MEDIATOR PATTERN');
   writeln('');
 
-  $mediator = new BookMediator('Gabriel García Márquez', 'Cien Años de Soledad');
+  $mediator = new BookMediator('Gamma, Helm, Johnson, and Vlissides', 'Design Patterns');
  
   $author = $mediator->getAuthor();
   $title = $mediator->getTitle();
